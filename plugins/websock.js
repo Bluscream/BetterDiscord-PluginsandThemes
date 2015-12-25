@@ -110,7 +110,6 @@ webSock.prototype.getAuthor = function() {
 }; */
 
 webSock.sendData = function(opcode,data){	
-	console.log(JSON.stringify({op: opcode, d: data}))
 	webSock.ws.send(JSON.stringify({op: opcode, d: data}));
 }
 webSock.sendMessage = function(){

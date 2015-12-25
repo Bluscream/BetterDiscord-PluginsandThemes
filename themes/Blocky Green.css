@@ -1,4 +1,4 @@
-/META{"name":"Dos","description":"Dos-like monospace theme","author":"Megamit","version":"1.0"}*//
+/META{"name":"Blocky Green","description":"'cause who likes round edges anywhere","author":"Megamit/Mitchell","version":"1.0"}*//
 
 @font-face {
     font-family: 'proggycleanttszbpregular';
@@ -15,9 +15,9 @@ body{
 }
 .status,.avatar-small,.guilds li.unread .guild-inner:before,.guilds li.active .guild-inner,.guilds li:hover .guild-inner,.guilds li .guild-inner ,
 .scroller-wrap .scroller::-webkit-scrollbar-thumb,.scroller-wrap .scroller::-webkit-scrollbar,.scroller-wrap .scroller::-webkit-scrollbar-track-piece,
-.channel-textarea-inner, .account .btn-group,.avatar-small .status
+.channel-textarea-inner, .account .btn-group,.avatar-small .status,.avatar-large
 {
-	border-radius:0;
+	border-radius:0 !important;
 }
 .guild-channels ul .channel-text,.guild-channels ul .channel-text a,.guild-channels,.btn-group .btn,.links,.typing,.account,.guild-header ul,
 .guilds-wrapper,#twitchcord-button,.theme-dark .channel-members .member,.chat .new-messages-bar,.scroller-wrap .scroller::-webkit-scrollbar-track-piece{
@@ -26,7 +26,7 @@ body{
 .channel-members,.channel-textarea-inner,.chat>.content{
 	background-color:transparent !important;
 }
-.guilds-separator,.guilds-separator:after,.help-container,.guilds li .guild-inner:before,.links{
+.guilds-separator,.guilds-separator:after,.help-container,.guilds li .guild-inner:before,.links,.guild-channels ul .channel-text:hover:not(.unread):before{
 	display: none;
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb{
@@ -115,20 +115,20 @@ body{
 
 
 
-.guild-channels ul .channel-text:hover{
+.guild-channels ul .channel-text:hover,{
 
 	opacity:1;
 
-	background-color:rgba(30, 30, 30, 1);
+	background:rgba(0, 150, 0, 1) !important;
 
 
 }
 
-.guild-channels ul .channel-text.selected{
+.guild-channels ul .channel-text.selected,.channel-members .member.popout-open, .channel-members .member:hover{
 
 	opacity:1;
 
-	background-color:rgba(30, 30, 30, 0.3);
+	background:rgba(0, 150, 0, 0.7) !important;
 
 }
 .guild-channels ul .channel-text.selected:before{
